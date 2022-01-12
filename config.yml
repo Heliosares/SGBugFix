@@ -1,0 +1,5 @@
+# Put a world name here to have invincibility stripped when players teleport into the world.
+# Only list worlds here that have no SurvivalGames arenas.
+# This is not required and is just a backup.
+ClearOnTeleportToWorld:
+ - null

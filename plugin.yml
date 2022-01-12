@@ -1,0 +1,6 @@
+name: SGBuxFix
+version: 1.0.0
+main: dev.nternal.sgbugfix.SGBugFix
+description: Fixes a bug with survival games where players maintain invincibility after rounds
+api-version: 1.16
+depend: [SurvivalGames]
