@@ -13,6 +13,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/Kyler/Documents/TestServer/Test1/Spigot/Spigot-API/target/spigot-api-1.18-R0.1-SNAPSHOT-shaded.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Kyler/Documents/TestServer/Test1/plugins/SurvivalGames (2).jar"/>
+	<classpathentry kind="lib" path="C:/Users/Kyler/Documents/TestServer/Test1/plugins/pluginbak1/SurvivalGames (2).jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

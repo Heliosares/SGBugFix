@@ -13,6 +13,13 @@ import me.wazup.survivalgames.SurvivalGames;
 
 public class SGBugFix extends JavaPlugin implements Listener {
 
+	// If you're wondering,
+	//
+	// "Wouldn't making SurvivalGames.getInstance().grace a java.util.Set
+	// fix this problem entirely?"
+	//
+	// then you're correct, it absolutely would. :D
+
 	@Override
 	public void onEnable() {
 		this.getServer().getPluginManager().registerEvents(this, this);
@@ -27,6 +34,9 @@ public class SGBugFix extends JavaPlugin implements Listener {
 		}
 	}
 
+	/*
+	 * Not really necessary. Just here as a failsafe.
+	 */
 	@EventHandler(priority = EventPriority.LOWEST)
 	public void onPlayerTeleport(PlayerTeleportEvent e) {
 		List<String> worlds = this.getConfig().getStringList("ClearOnTeleportToWorld");
@@ -46,6 +56,9 @@ public class SGBugFix extends JavaPlugin implements Listener {
 		}
 	}
 
+	/*
+	 * "Isn't this just a Set?" Yes..
+	 */
 	public static class CustomArrayList<T> extends ArrayList<T> {
 		@Override
 		public boolean add(T t) {
